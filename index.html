@@ -11,20 +11,31 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <style>
         body {
-            background: url('https://images.pexels.com/photos/33545/sunrise-phu-quoc-island-ocean.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat;
+            background: url(img/pexels-photo-4947573.jpeg) no-repeat;
             background-size: cover;
-            height: 80vh;
+            height: 100vh;
+            background-position: center;
+            background-size: 100% 100%;
+        }
+
+        .all-info {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
         }
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <form class="col-md-6 m-auto py-5">
+    <div class="container all-info">
+        <form class="m-auto py-5 w-75 d-flex align-items-center">
             <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Enter a location for Weather ...">
+                <input type="text" class="form-control p-4 text-center" placeholder="Enter a location for Weather ...">
                 <div class="input-group-append">
-                    <button type="button" class="btn btn-danger">Search</button>
+                    <button type="button" class="btn btn-danger px-5">Search</button>
                 </div>
             </div>
         </form>
