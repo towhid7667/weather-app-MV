@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <style>
         body {
-            background: url(img/pexels-photo-4947573.jpeg) no-repeat;
+            background: url(img/final-one.jpg) no-repeat;
             background-size: cover;
             height: 100vh;
             background-position: center;
@@ -33,20 +33,22 @@
     <div class="container all-info">
         <form class="m-auto py-5 w-75 d-flex align-items-center">
             <div class="input-group mb-3">
-                <input type="text" class="form-control p-4 text-center" placeholder="Enter a location for Weather ...">
+                <input type="text" class="form-control p-4 text-center" placeholder="Enter a location for Weather ..."
+                    id="cityname">
                 <div class="input-group-append">
-                    <button type="button" class="btn btn-danger px-5">Search</button>
+                    <button type="button" class="btn btn-danger px-5" id="SeeThings">Search</button>
                 </div>
             </div>
         </form>
         <div class="weather-status text-white text-center">
             <img src="https://openweathermap.org/img/wn/02d@2x.png" alt="">
-            <h1>Dhaka</h1>
-            <h3><span>38.06</span>&deg;C</h3>
-            <h1 class="lead">Clouds</h1>
+            <h1 id="cityValue">Dhaka</h1>
+            <h3><span id="temperature">38.06</span>&deg;C</h3>
+            <h1 class="lead" id="happenedToday">Clouds</h1>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="weather-info.js"></script>
 </body>
 
 </html>
