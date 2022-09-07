@@ -13,7 +13,7 @@ const loadTemperature = async () => {
 }
 
 const displayTemparature = (climateThings) => {
-    console.log(climateThings);
+    // console.log(climateThings);
 
     let cityName = document.getElementById('cityValue');
     cityName.innerText = (climateThings.name);
@@ -26,6 +26,10 @@ const displayTemparature = (climateThings) => {
 
     let HappeningValue = document.getElementById('happenedToday');
     HappeningValue.innerText = (climateThings.weather[0].main);
+
+    const Url = `http://openweathermap.org/img/wn/${climateThings.weather[0].icon}@2x.png`;
+    const imgIcon = document.getElementById('weather-icon');
+    imgIcon.setAttribute('src', Url);
 
 
 
